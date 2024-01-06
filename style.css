@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    min-height: 500px;
+    background: url(images/mobile/image-hero.jpg);
+    background-size: cover;
+    padding: 40px 20px;
+}
+.websiteLogo {
+    width: 120px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-section-title {
+    margin: 150px 0px;
+    border: 2px solid white;
+    padding: 20px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    max-width: 500px;
+}
+.leader-section {
+    margin-top: 40px;
+    padding: 20px;
+}
+.leader-section img {
+    width: 100%;
+}
