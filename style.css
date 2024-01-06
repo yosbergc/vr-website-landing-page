@@ -27,10 +27,105 @@ header {
     font-size: 1.5rem;
     max-width: 500px;
 }
-.leader-section {
-    margin-top: 40px;
+.leader-section, .creations-section {
+    margin: 40px 0px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .leader-section img {
     width: 100%;
+    max-width: 500px;
+}
+.leader-section h2 {
+    text-align: center;
+    margin: 20px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.leader-section p {
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    color: hsl(0, 0%, 55%);
+}
+.creations-section h2 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.single-creation {
+    height: 120px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.earth {
+    background: url(images/mobile/image-deep-earth.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.night-arcade {
+    background: url(images/mobile/image-night-arcade.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.soccer {
+    background: url(images/mobile/image-soccer-team.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.the-grid {
+    background: url(images/mobile/image-grid.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.above-vr {
+    background: url(images/mobile/image-from-above.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.borealis {
+    background: url(images/mobile/image-pocket-borealis.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.curiosity {
+    background: url(images/mobile/image-curiosity.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.make-it {
+    background: url(images/mobile/image-fisheye.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.single-creation::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.single-creation > * {
+    z-index: 2;
+}
+.creations-cta {
+    font-family: 'Alata', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 5px 20px;
 }
