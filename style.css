@@ -128,6 +128,11 @@ header {
     font-size: 1.2rem;
     border: 2px solid black;
     padding: 5px 30px;
+    transition: all 0.2s ease-in-out;
+}
+.creations-cta:hover {
+    background-color: black;
+    color: white;
 }
 footer {
     background-color: black;
@@ -149,7 +154,7 @@ footer ul {
     margin: 40px 0px;
 }
 footer ul li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 15px;
 }
 .socials {
@@ -162,5 +167,164 @@ footer p {
     margin-top: 30px;
     font-family: 'Josefin Sans', sans-serif;
     color: hsl(0, 0%, 41%);
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+.desktop-header--container {
+    display: none;
+}
+.creations-container {
+    width: 100%;
+}
+@media (min-width: 1280px) {
+    .websiteLogo {
+        width: 150px;
+    }
+    .desktop-header--container {
+        display: flex;
+    }
+    .mobile-header--container {
+        display: none;
+    }
+    .hero-section {
+        position: relative;
+        background: url(images/desktop/image-hero.jpg);
+        background-size: cover;
+    }
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 0%, 0.4);
+        top: 0px;
+        left: 0px;
+    }
+    .hero-section > * {
+        position: relative;
+        z-index: 2 !important;
+    }
+    .hero-section-title {
+        font-size: 2.5rem;
+        margin: 100px 0px;
+    }
+    .header-nav ul {
+        display: flex;
+        list-style: none;
+        color: white;
+        font-family: 'Alata', sans-serif;
+        font-size: 1.2rem;
+    }
+    .header-nav ul li {
+        margin-left: 30px;
+    }
+    .header-nav ul li:hover {
+        cursor: pointer;
+    }
+    .leader-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        position: relative;
+        justify-content: right;
+        align-items: center;
+    }
+    .leader-section img {
+        max-width: none;
+        width: 90%;
+    }
+    .section-info {
+        background-color: white;
+        position: absolute;
+        width: 500px;
+        padding: 50px;
+        left: 40%;
+        bottom: 0px;
+    }
+    .section-info h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    .section-info p {
+        text-align: left;
+    }
+    .creations-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .single-creation {
+        width: 100%;
+        height: 400px;
+    }
+    .earth {
+        background: url(images/desktop/image-deep-earth.jpg);
+        background-size: cover;
+    }
+    .night-arcade {
+        background: url(images/desktop/image-night-arcade.jpg);
+        background-size: cover;
+    }
+    .soccer {
+        background: url(images/desktop/image-soccer-team.jpg);
+        background-size: cover;
+    }
+    .the-grid {
+        background: url(images/desktop/image-grid.jpg);
+        background-size: cover;
+    }
+    .above-vr {
+        background: url(images/desktop/image-from-above.jpg);
+        background-size: cover;
+    }
+    .borealis {
+        background: url(images/desktop/image-pocket-borealis.jpg);
+        background-size: cover;
+    }
+    .curiosity {
+        background: url(images/desktop/image-curiosity.jpg);
+        background-size: cover;
+    }
+    .make-it {
+        background: url(images/desktop/image-fisheye.jpg);
+        background-size: cover;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-one ul {
+        display: flex;
+        margin: 0px;
+    }
+    .section-one ul li {
+        margin-right: 20px;
+    }
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .creations-section {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+        margin: 20px;
+    }
+    .creations-container {
+        order: 3;
+        grid-column: span 2;
+        margin-top: 20px;
+    }
+    .creations-section h2 {
+        grid-column: span 1;
+        margin-bottom: 0px;
+        justify-self: left;
+    }
+    .creations-cta {
+        grid-column: span 1;
+        width: fit-content;
+        padding: 10px 60px;
+        justify-self: right;
+    }
 }
